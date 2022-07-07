@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #353353;
+}
+
+h1 {
+    color: #F7F7F7;
+    text-align: center;
+}
+
+.inputArea {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#inputText {
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+    outline: none;
+    border-radius: 15px;
+    border: 0;
+    box-shadow: 1px 0px 15px #555    ;
+}
+
+.listArea {
+    width: 400px;
+    display: none;
+    margin: auto;
+    background-color: #F7F7F7;
+    border-radius: 15px;
+    padding: 15px;
+    flex-direction: column;   
+}
+.lists {
+    display: flex;
+}
+
+.listItem {
+    width: 300px;
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.risk {
+    text-decoration: line-through;
+    color: #555;
+}
+
+
+
+.checkBox {
+	width: 15px;	
+    height: 15px;
+	margin: auto 1px;
+    background-color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.checked {
+    background-color: #0d630d;  
+}
+
+.checkBox:hover,
+.checked:hover {
+    opacity: 0.2;
+}
+
+.clear {
+    margin-top: 50px;
+    height: 40px;
+    width: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    display: none;
+}
+
+.clear span {
+    margin-top: 15px;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #F7F7F7;
+    height: 100%;
+    border-radius: 15px;
+}
