@@ -50,6 +50,5 @@ function clear(e) {
         item.remove();
     })
     document.querySelector('.clear').style.display = 'none';
-    document.querySelector('.listArea').style.display = 'none';
 
 }
