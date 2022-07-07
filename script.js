@@ -1,5 +1,3 @@
-// Functions Ok
-
 function inputKeyUp(e) {
     if (e.key === 'Enter') {
         if (e.target.value !== '') {
@@ -7,7 +5,7 @@ function inputKeyUp(e) {
         
         document.querySelector('.listArea').innerHTML += `<div class="lists"><div class="checkBox"></div><div class="listItem">${list}</div></div>`;
         
-        rodar();
+        startCheck();
         blankInput();
         document.querySelector('.listArea').style.display = 'flex';
 
@@ -20,7 +18,7 @@ function blankInput() {
     document.querySelector('#inputText').value = '';
 }
 
-function rodar() {
+function startChec() {
     document.querySelectorAll('.checkBox').forEach(item => {
         item.addEventListener('click', line);
     })
@@ -38,7 +36,6 @@ function line(e) {
     }
 };
 
-// em teste
 
 document.querySelector('.clear span').addEventListener('click', clear);
 
