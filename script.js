@@ -5,7 +5,7 @@ function inputKeyUp(e) {
         
         document.querySelector('.listArea').innerHTML += `<div class="lists"><div class="checkBox"></div><div class="listItem">${list}</div></div>`;
         
-        startCheck();
+        roda();
         blankInput();
         document.querySelector('.listArea').style.display = 'flex';
 
@@ -18,7 +18,7 @@ function blankInput() {
     document.querySelector('#inputText').value = '';
 }
 
-function startChec() {
+function roda() {
     document.querySelectorAll('.checkBox').forEach(item => {
         item.addEventListener('click', line);
     })
